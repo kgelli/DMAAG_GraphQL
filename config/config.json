@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "postgres",// Update this
+    "password": "postgres",
     "database": "west_dmaag",
     "host": "localhost",
     "dialect": "postgres",
@@ -10,7 +10,7 @@
   },
   "test": {
     "username": "postgres",
-    "password": "postgres",// Update this
+    "password": "postgres",
     "database": "west_dmaag",
     "host": "localhost",
     "dialect": "postgres",
@@ -19,7 +19,7 @@
   },
   "production": {
     "username": "postgres",
-    "password": "postgres",// Update this
+    "password": "postgres",
     "database": "west_dmaag",
     "host": "localhost",
     "dialect": "postgres",
