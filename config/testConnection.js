@@ -5,14 +5,14 @@ const AppDataSource = new DataSource({
     host: 'localhost',
     port: 5432,
     username: 'postgres',
-    password: '************',// Update this
+    password: 'postgres',// Update this
     database: 'west_dmaag',
     schema: 'DMAAG',
     synchronize: false,
     logging: false,
     entities: [
-        require('./models/GsuTable'),
-        require('./models/TroyTable')
+        require('../models/GsuTable'),
+        require('../models/TroyTable')
     ]
 });
 
