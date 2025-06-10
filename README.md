@@ -26,11 +26,11 @@
 ### 1. Clone the Repositories
 ```bash
 # Clone Frontend
-git clone https://github.com/tadipaneni/DMAAG_Frontend.git
+git clone https://github.com/kgelli/DMAAG_Frontend.git
 cd DMAAG_Frontend
 
 # Clone Backend (in a separate terminal)
-git clone https://github.com/tadipaneni/DMAAG_GraphQL.git
+git clone https://github.com/kgelli/DMAAG_GraphQL.git
 cd DMAAG_GraphQL
 ```
 
