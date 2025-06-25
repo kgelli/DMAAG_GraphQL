@@ -1,3 +1,6 @@
+// Load environment variables first
+require('dotenv').config();
+
 require('@babel/register'); // Ensure Babel transpiles your code
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
@@ -27,9 +30,10 @@ async function startServer() {
         server.applyMiddleware({ app }); // Apply Apollo GraphQL middleware to Express
 
         // Start the Express server
+        const SERVER_HOST = process.env.SERVER_HOST || 'localhost';
         const PORT = process.env.PORT || 4000;
         app.listen(PORT, () => {
-            console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
+            console.log(`🚀 Server ready at http://${SERVER_HOST}:${PORT}${server.graphqlPath}`);
         });
     } catch (error) {
         console.error("Error starting the server:", error);

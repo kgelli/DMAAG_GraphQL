@@ -1,13 +1,16 @@
+// Load environment variables
+require('dotenv').config();
+
 const { DataSource } = require('typeorm');
 
 const AppDataSource = new DataSource({
-    type: 'postgres',
-    host: 'localhost',
-    port: 5432,
-    username: 'postgres',
-    password: 'postgres',// Update this
-    database: 'west_dmaag',
-    schema: 'DMAAG',
+    type: process.env.DB_TYPE || 'postgres',
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT) || 5432,
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME || 'west_dmaag',
+    schema: process.env.DB_SCHEMA || 'DMAAG',
     synchronize: false,
     logging: false,
     entities: [
