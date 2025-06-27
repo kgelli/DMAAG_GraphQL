@@ -1,4 +1,4 @@
-// Load environment variables first
+// Load environment variables
 require('dotenv').config();
 
 require('@babel/register'); // Ensure Babel transpiles your code
