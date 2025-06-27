@@ -20,14 +20,14 @@ const AppDataSource = new DataSource({
 async function testConnection() {
     try {
         await AppDataSource.initialize();
-        console.log('Connection to PostgreSQL database has been established successfully.');
+        console.log('✅ Connection to PostgreSQL database has been established successfully.');
         
         // Test basic query
         const result = await AppDataSource.query('SELECT NOW() as current_time');
         console.log('Current time:', result[0].current_time);
         
     } catch (error) {
-        console.error('Unable to connect to the database:', error.message);
+        console.error('❌ Unable to connect to the database:', error.message);
     } finally {
         await AppDataSource.destroy();
     }
