@@ -1,8 +1,8 @@
-# DMAAG 
+# DMMAG 
 
 ## Project Repositories
-- Frontend: [DMAAG_Frontend](https://github.com/YOUR_USERNAME/DMAAG_Frontend/tree/master)
-- Backend: [DMAAG_GraphQL](https://github.com/YOUR_USERNAME/DMAAG_GraphQL/tree/master)
+- Frontend: [DMMAG_Frontend](https://github.com/YOUR_USERNAME/DMMAG_Frontend/tree/master)
+- Backend: [DMMAG_GraphQL](https://github.com/YOUR_USERNAME/DMMAG_GraphQL/tree/master)
 
 ## Prerequisites
 - Node.js and npm installed
@@ -26,18 +26,18 @@
 ### 1. Clone the Repositories
 ```bash
 # Clone Frontend
-git clone https://github.com/<USERNAME>/DMAAG_Frontend.git
-cd DMAAG_Frontend
+git clone https://github.com/<USERNAME>/DMMAG_Frontend.git
+cd DMMAG_Frontend
 
 # Clone Backend (in a separate terminal)
-git clone https://github.com/<USERNAME>/DMAAG_GraphQL.git
-cd DMAAG_GraphQL
+git clone https://github.com/<USERNAME>/DMMAG_GraphQL.git
+cd DMMAG_GraphQL
 ```
 
 ### 2. GraphQL Server Setup
 Navigate to the GraphQL server directory and install dependencies:
 ```bash
-cd DMAAG_GraphQL
+cd DMMAG_GraphQL
 npm install
 ```
 
@@ -65,7 +65,7 @@ The GraphQL server will be available at: `http://localhost:4000/graphql`
 ### 3. Frontend Setup
 Navigate to the frontend directory:
 ```bash
-cd DMAAG_Frontend
+cd DMMAG_Frontend
 ```
 
 Install dependencies:
@@ -129,7 +129,7 @@ The project uses environment variables for configuration stored in a `.env` file
 ### File Structure Check
 Your project should look like this:
 ```
-DMAAG_GraphQL/
+DMMAG_GraphQL/
 ├── config/
 ├── models/
 ├── node_modules/
@@ -151,10 +151,10 @@ npm install
 # Test database connection
 node testConnection.js
 
-# Start GraphQL server (in DMAAG_GraphQL directory)
+# Start GraphQL server (in DMMAG_GraphQL directory)
 npm start
 
-# Start Frontend (in DMAAG_Frontend directory)
+# Start Frontend (in DMMAG_Frontend directory)
 npm start
 
 # Run tests
